@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;   
+  }
+  body::-webkit-scrollbar-track {
+    background:black;        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(117, 117, 121, 0.725);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+  
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(236, 230, 230, 0.889);
+    padding: 20px 90px;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.nav{
+    padding: 1em;
+    text-decoration: none;
+
+}
+.nav:visited{
+    color: blue;
+}
+/* class nav of navigation bad content  */
+nav a{
+    font-size:16px;
+    font-weight: 500;
+}
+
+.nav:hover{
+    background-color: rgb(155, 155, 169);
+    border-radius: 15px;
+}
+
+section{
+    /* padding: 100px 200px; */
+    padding: 100px;
+}
+
+.main{
+    /* background-color: #d9d9d9; */
+    background: url("wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+ h2{
+    color: white;
+    text-align: center;
+    margin: 50px auto ;
+    background-color: black;
+    width: fit-content;
+    padding: 6px;
+ }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+ }
+    .cards div{
+        width: 700px;
+        height: 600px;
+        margin-bottom: 20px;
+        background-color: #f5f3f4;
+        border-radius: 15px;
+        box-shadow: 0px 0px 8px rgb(86, 83, 83);
+    }
+    .box img{
+        width:400px;
+        height: 300px;
+        border-radius: 10px;
+        /* margin: auto; */
+        margin: 10px;
+        border: 1px solid black;
+
+    }
+
+    span{
+        font-weight: 30px;
+        font-weight: bold;
+    }
+    ul{
+        margin-left: 30px;
+        line-height: 1;
+        font-size: 15px;
+    }
+
+    footer{
+        height: 12.311901504787961vh;
+        width: 100%;
+        background-color: #003049;
+    }
+    footer h3{
+        color: rgb(248, 239, 239);
+        background-color: black;
+        
+    
+    }
+    .icons_foot {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+    .icons_foot a{
+        margin-right: 15px;
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+    }
+
+
+
+
+
+    @media (max-width:1000px){
+        header{
+            display: inline-block;
+            height: 80px;
+            z-index: 9999999;
+            padding: 3px 0px;
+            font-size: 20px;
+    
+        }
+        
+        .logo{
+            text-decoration: none;
+            color: black;
+            /* font-weight: bold; */
+            font-size: 0.9em;
+            margin-left: 09x;
+        }
+        .nav{
+            padding: 0.4em;
+            text-decoration: none;
+            font-size: 9pz;
+        
+        }
+        .nav:visited{
+            color: blue;
+        }
+        /* class nav of navigation bad content  */
+        nav a{
+            font-size:12px;
+            font-weight: 500;
+        }
+
+
+
+        section{
+            /* padding: 100px 200px; */
+            padding: 100px;
+        }
+        
+        
+         h2{
+             font-size: 16px;
+            color: white;
+            margin: auto;
+            background-color: black;
+            width:auto;
+            padding: 5px;
+         }
+        
+            .cards{
+                display: flex;
+                flex-direction: column;
+                align-items: center;   
+
+         }
+            .cards div{
+                width: 14rem;
+                /* width: auto; */
+                height: 500px;
+                margin-bottom: 20px;
+                
+            }
+            li{
+                font-size: 10px;
+                word-wrap: break-word;
+            }
+            .box img{
+                width:200px;
+                height: 150px;
+                border-radius: 10px;
+                /* margin: auto; */
+                margin: 10px;
+                border: 1px solid black;
+        
+            }
+        
+            footer{
+                height: 12.311901504787961vh;
+                width: 100%;
+                background-color: #003049;
+            }
+            footer h3{
+                color: rgb(248, 239, 239);
+                background-color: black;
+                font-size: 15px;
+            
+            }
+            .icons_foot {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 15px;
+                margin-top: 10px;
+            }
+            .icons_foot a{
+                margin-right: 15px;
+                font-size: 1.5em;
+                color: rgb(255, 255, 255);
+            }
+
+
+
+
+    }
